@@ -12,7 +12,7 @@
 chr=$1
 
 #FIXME: make sure the filter threshold matches
-INDIR=/uufs/chpc.utah.edu/common/home/pezzolesi-group2/Illumina_DRAGEN_analyses/72BGEWGS_samples/GLIMPSE/GLIMPSE_ #FIXME
+INDIR=/uufs/chpc.utah.edu/common/home/pezzolesi-group2/Illumina_DRAGEN_analyses/72BGEWGS_samples/GLIMPSE/GLIMPSE_ligate
 OUTDIR=/uufs/chpc.utah.edu/common/home/pezzolesi-group2/Illumina_DRAGEN_analyses/72BGEWGS_samples/GLIMPSE/GLIMPSE_merge_raw
 ANNOTATEDIR=/uufs/chpc.utah.edu/common/home/pezzolesi-group2/Illumina_DRAGEN_analyses/72BGEWGS_samples/GLIMPSE/GLIMPSE_annotate
 
@@ -37,7 +37,7 @@ bcftools view -i 'INFO/AC > 0' $MISSVCF -O z -o $ACVCF --threads $SLURM_CPUS_ON_
 /uufs/chpc.utah.edu/common/home/u1311353/manipulate_VCF/Bcftools/Normalize/decomposeNormalize_GRCh38.sh $ACVCF $OUTDIR
 
 NORMVCF=$OUTDIR/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_allsamples_chr${chr}_decomposed_normalized.vcf.gz
-/uufs/chpc.utah.edu/common/home/u1311353/manipulate_VCF/Annotate/standardAnnotation_VCFs_hg38_updated_gnomad_v.sh $NORMVCF
+/uufs/chpc.utah.edu/common/home/u1311353/manipulate_VCF/Annotation/standardAnnotation_VCFs_hg38_updated_gnomad_v.sh $NORMVCF
 
 ANNOTATEVCF=/scratch/general/vast/$USER/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_allsamples_chr${chr}_decomposed_normalized/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_allsamples_chr${chr}.hg38multianno.vcf.gz
 mv $ANNOTATEVCF $ANNOTATEDIR

@@ -1,2 +1,4 @@
 bamlist.txt
 templist.txt
+*.out
+*.err
