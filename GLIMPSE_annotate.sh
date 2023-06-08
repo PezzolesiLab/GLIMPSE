@@ -7,7 +7,7 @@
 #SBATCH --mail-user=devorah.stucki@hsc.utah.edu
 #SBATCH --mail-type=END
 #SBATCH --account=pezzolesi
-#SBATCH --partition=lonepeak
+#SBATCH --partition=kingspeak
 
 BAM=$1
 BASENAME=$(basename "$BAM")
