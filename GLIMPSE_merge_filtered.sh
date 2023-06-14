@@ -41,5 +41,3 @@ bcftools view -i 'INFO/AC > 0' $MISSVCF -O z -o $ACVCF --threads $SLURM_CPUS_ON_
 NORMVCF=$OUTDIR/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_filter${filter}_allsamples_chr${chr}_decomposed_normalized.vcf.gz
 /uufs/chpc.utah.edu/common/home/u1311353/manipulate_VCF/Annotation/standardAnnotation_VCFs_hg38_updated_gnomad_v.sh $NORMVCF
 
-ANNOTATEVCF=/scratch/general/vast/$USER/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_allsamples_chr${chr}_decomposed_normalized/ACfilter_missingfilter_fill_tags_BGE_GLIMPSE_filter${filter}_allsamples_chr${chr}.hg38_multianno.vcf.gz
-mv $ANNOTATEVCF $ANNOTATEDIR
