@@ -5,8 +5,11 @@ GLIMPSE Pipeline for imputing BGE data.
 
 ### Dependencies
 
-Install GLIMPSE binaries (insert link)
-Later scripts also use bcftools and annovar (link to annovar script)
+Install [GLIMPSE binaries](https://github.com/odelaneau/glimpse/releases)
+Later scripts also use bcftools and annovar (link to annovar script). If you are running the program on the chpc you can load bcftools as a module by running the following command.
+````
+module load bcftools/1.14
+````
 
 ### Instalation
 Update SLURM Schedular to new users information
