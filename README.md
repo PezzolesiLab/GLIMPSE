@@ -24,27 +24,37 @@ bcftools index -f reference_panel/NAME_OF_REFERENCE_norm.sites.vcf.gz
 
 ## Executable Files
 
-These scripts are loosely based off the GLIMPSE tutorial located here. 
+These scripts are loosely based off the [GLIMPSE Getting Started tutorial](https://odelaneau.github.io/GLIMPSE/docs/tutorials/getting_started/). 
 
 Make sure to update the SLURM schedular to match the user and perfered cluster. If running on the CHPC all scripts that execute a GLIMPSE binary must be run on notchpeak.
 
-### example_script_1.R
+### GLIMPSE_chuck.sh
 
-What does this script do?
+### GLIMPSE_split_reference.sh
 
-What needs to be done every time the script is run? What is the input for the script? What arguments does this script take?
-1. Argument 1
-2. Argument 2
+### GLIMPSE_impute.sh
 
-What is the output for this script?
+### GLIMPSE_ligate.sh
 
-### example-script_2.py
+### GLIMPSE_merge_raw.sh
 
-Rinse and repeat
+### GLIMPSE_GPfilter.sh
 
-## Other Notes
+### GLIMPSE_merge_filtered.sh
 
-If you want more information on how to format a markdown document [this website](https://www.markdownguide.org/basic-syntax/) gives a great overview.
+### GLIMPSE_missingness.sh
+
+### GLIMPSE_annotate.sh
+
+### GLIMPSE_concordance.sh
+
+### concordance_plot.py
+
+### convert2vcf.sh
+
+### runImpute.sh
+
+### runMerge.sh
 
 ## Authors
 
